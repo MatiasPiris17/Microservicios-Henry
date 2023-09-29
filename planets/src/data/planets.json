@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Tatooine",
+      "climate": "Arid",
+      "terrain": "Desert",
+      "population": 200000
+    },
+    {
+      "name": "Alderaan",
+      "climate": "Temperate",
+      "terrain": "Grasslands, Mountains",
+      "population": 2000000000
+    },
+    {
+      "name": "Endor",
+      "climate": "Temperate",
+      "terrain": "Forests, Mountains",
+      "population": 30000000
+    },
+    {
+      "name": "Hoth",
+      "climate": "Frozen",
+      "terrain": "Tundra, Ice Caves",
+      "population": 0
+    },
+    {
+      "name": "Dagobah",
+      "climate": "Murky",
+      "terrain": "Swamp, Forest",
+      "population": 0
+    }
+  ]
