@@ -4,6 +4,6 @@ const controllers = require("../controllers")
 const router = Router()
 
 router.get("/", controllers.getCharacter)
-router.post("/", controllers.createCharacter)
+// router.post("/", controllers.createCharacter)
 
 module.exports = router

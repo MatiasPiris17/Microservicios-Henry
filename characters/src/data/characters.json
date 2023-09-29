@@ -1,0 +1,32 @@
+[
+      {
+        "name": "Iron Man",
+        "alias": "Tony Stark",
+        "superpowers": ["Powered Armor", "Genius-level intellect"],
+        "affiliation": "Avengers"
+      },
+      {
+        "name": "Captain America",
+        "alias": "Steve Rogers",
+        "superpowers": ["Superhuman strength", "Enhanced agility"],
+        "affiliation": "Avengers"
+      },
+      {
+        "name": "Thor",
+        "alias": "Thor Odinson",
+        "superpowers": ["God-like strength", "Control over lightning"],
+        "affiliation": "Avengers"
+      },
+      {
+        "name": "Black Widow",
+        "alias": "Natasha Romanoff",
+        "superpowers": ["Master spy", "Expert hand-to-hand combatant"],
+        "affiliation": "Avengers"
+      },
+      {
+        "name": "Hulk",
+        "alias": "Bruce Banner",
+        "superpowers": ["Superhuman strength", "Regeneration"],
+        "affiliation": "Avengers"
+      }
+    ]
