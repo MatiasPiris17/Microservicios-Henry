@@ -9,8 +9,8 @@ server.use(express.json());
 
 server.use("/planets", require("./routes"));
 
-server.use("*", (req, res) => {
-  new ClientError("El endpoint no existe", 500)
+server.all("*", (req, res) => {
+  new ClientError("El endpoint no existe", 500);
 });
 
 server.use((err, req, res, next) => {

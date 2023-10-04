@@ -11,8 +11,8 @@ server.use(require("./routes"))
 
 server.use("/films", require("./routes"));
 
-server.use("*", (req, res) => {
-  new ClientError("El endpoint no existe", 500)
+server.all("*", (req, res) => {
+  new ClientError("El endpoint no existe", 500);
 });
 
 
