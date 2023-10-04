@@ -35,7 +35,7 @@ docker run --network=starwars --name=characters -p 8001:8001 characters
 
 6. Repite los pasos 4 y 5 para los servicios de películas (films) y planetas (planets) siguiendo el mismo patrón.
 
-6. En la carpeta database:
+7. En la carpeta database:
 ```shell
 - Crear: “Dockerfile” y “.dockerignore”
 - Construir la imagen
@@ -45,4 +45,10 @@ docker run --network=starwars --name=characters -p 8001:8001 characters
 - // Desde le microservicio de character, y asumiendo que llamaste // "database" al contenedor del microservicio de datos dentro de // la red.
 
 axios.get("http://database:8004/Character")
+```
+
+8. Docker compose: En la capeta inicial:
+```shell
+- docker-compose build
+- docker-compose up (inicializa la aplicacion) 
 ```
