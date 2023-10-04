@@ -35,4 +35,14 @@ docker run --network=starwars --name=characters -p 8001:8001 characters
 
 6. Repite los pasos 4 y 5 para los servicios de películas (films) y planetas (planets) siguiendo el mismo patrón.
 
-¡Listo! Ahora tienes un entorno Docker configurado para trabajar en tu proyecto relacionado con Star Wars.
+6. En la carpeta database:
+```shell
+- Crear: “Dockerfile” y “.dockerignore”
+- Construir la imagen
+- Conectarlo a la red
+```
+```shell
+- // Desde le microservicio de character, y asumiendo que llamaste // "database" al contenedor del microservicio de datos dentro de // la red.
+
+axios.get("http://database:8004/Character")
+```
