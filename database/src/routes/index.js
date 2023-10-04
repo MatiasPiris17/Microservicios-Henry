@@ -1,6 +1,6 @@
-// const { Router } = require("express");
 const store = require("../database");
-const { validateModel } = require("../middlewares");
+const { validateModel, validateRegister } = require("../middlewares");
+const controllers = require("../controllers")
 
 const router = require("express").Router()
 
@@ -16,11 +16,6 @@ router.get("/:model/:id", validateModel, async (req, res) => {
   res.status(200).json(response);
 });
 
-router.post("/:model", validateModel, async (req, res) => {
-  const { model } = req.params;
-  const body = req.body;
-  const response = await store[model].insert(body);
-  res.status(200).json(response);
-});
+router.post("/:model", validateModel, controllers.createModel);
 
 module.exports = router;
