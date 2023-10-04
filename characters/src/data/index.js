@@ -1,9 +1,10 @@
-
+const axios = require("axios")
 const characters = require('./characters.json')
 
 module.exports = {
     list: async() => {
-        return characters
+        const response = await axios.get("http://database:8004/Character")
+        return response.data
     },
     create: async() => {
         throw Error("Error al crear un nuevo Character")
