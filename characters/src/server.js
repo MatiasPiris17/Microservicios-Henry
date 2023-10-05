@@ -11,7 +11,7 @@ server.use(require("./routes"));
 
 server.use("/characters", require("./routes"));
 
-server.all("/*", (req, res) => {
+server.all("*", (req, res) => {
   new ClientError("El endpoint no existe", 500);
 });
 
